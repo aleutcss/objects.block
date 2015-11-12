@@ -7,19 +7,19 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$inuit-block-gutter:            $inuit-base-spacing-unit !default;
-$inuit-block-gutter--tiny:        quarter($inuit-block-gutter) !default;
-$inuit-block-gutter--small:         halve($inuit-block-gutter) !default;
-$inuit-block-gutter--large:        double($inuit-block-gutter) !default;
-$inuit-block-gutter--huge:      quadruple($inuit-block-gutter) !default;
+$o-block-gutter:            $inuit-base-spacing-unit !default;
+$o-block-gutter--tiny:        quarter($o-block-gutter) !default;
+$o-block-gutter--small:         halve($o-block-gutter) !default;
+$o-block-gutter--large:        double($o-block-gutter) !default;
+$o-block-gutter--huge:      quadruple($o-block-gutter) !default;
 
-$inuit-enable-block--flush:     false !default;
-$inuit-enable-block--tiny:      false !default;
-$inuit-enable-block--small:     false !default;
-$inuit-enable-block--large:     false !default;
-$inuit-enable-block--huge:      false !default;
-$inuit-enable-block--center:    false !default;
-$inuit-enable-block--right:     false !default;
+$o-block--flush:     false !default;
+$o-block--tiny:      false !default;
+$o-block--small:     false !default;
+$o-block--large:     false !default;
+$o-block--huge:      false !default;
+$o-block--center:    false !default;
+$o-block--right:     false !default;
 
 
 
@@ -39,9 +39,9 @@ $inuit-enable-block--right:     false !default;
      */
     .o-block__img {
         vertical-align: middle; /* [1] */
-        margin-bottom: $inuit-block-gutter;
+        margin-bottom: $o-block-gutter;
 
-        @if ($inuit-enable-block--flush == true) {
+        @if ($o-block--flush == true) {
 
             /**
              * No space between the image and the text content.
@@ -53,50 +53,50 @@ $inuit-enable-block--right:     false !default;
 
         }
 
-        @if ($inuit-enable-block--tiny == true) {
+        @if ($o-block--tiny == true) {
 
             /**
              * Tiny space between the image and the text content.
              */
 
             .o-block--tiny > & {
-                margin-bottom: $inuit-block-gutter--tiny;
+                margin-bottom: $o-block-gutter--tiny;
             }
 
         }
 
-        @if ($inuit-enable-block--small == true) {
+        @if ($o-block--small == true) {
 
             /**
              * Small space between the image and the text content.
              */
 
             .o-block--small > & {
-                margin-bottom: $inuit-block-gutter--small
+                margin-bottom: $o-block-gutter--small
             }
 
         }
 
-        @if ($inuit-enable-block--large == true) {
+        @if ($o-block--large == true) {
 
             /**
              * Large space between the image and the text content.
              */
 
             .o-block--large > & {
-                margin-bottom: $inuit-block-gutter--large;
+                margin-bottom: $o-block-gutter--large;
             }
 
         }
 
-        @if ($inuit-enable-block--huge == true) {
+        @if ($o-block--huge == true) {
 
             /**
              * Huge space between the image and the text content.
              */
 
             .o-block--huge > & {
-                margin-bottom: $inuit-block-gutter--huge;
+                margin-bottom: $o-block-gutter--huge;
             }
 
         }
@@ -110,8 +110,7 @@ $inuit-enable-block--right:     false !default;
     /**
      * Text-content.
      */
-    .o-block__body,
-    %o-block__body {
+    .o-block__body {
         display: block;
     }
 
@@ -119,27 +118,25 @@ $inuit-enable-block--right:     false !default;
 
 
 
-@if ($inuit-enable-block--right == true) {
+@if ($o-block--right == true) {
 
     /**
      * Right-aligned blocks.
      */
 
-    .o-block--right,
-    %o-block--right {
+    .o-block--right {
         text-align: right;
     }
 
 }
 
-@if ($inuit-enable-block--center == true) {
+@if ($o-block--center == true) {
 
     /**
      * Center-aligned blocks.
      */
 
-    .o-block--center,
-    %o-block--center {
+    .o-block--center {
         text-align: center;
     }
 
