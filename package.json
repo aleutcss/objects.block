@@ -1,5 +1,5 @@
 {
-  "name": "inuit-block",
+  "name": "aleut-block",
   "version": "0.2.0",
   "description": "A simple stacked image-with-text in the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_objects.block.scss",
