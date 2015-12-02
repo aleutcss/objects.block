@@ -7,7 +7,7 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$o-block-gutter:            $inuit-base-spacing-unit !default;
+$o-block-gutter:            $spacing !default;
 $o-block-gutter--tiny:        quarter($o-block-gutter) !default;
 $o-block-gutter--small:         halve($o-block-gutter) !default;
 $o-block-gutter--large:        double($o-block-gutter) !default;
