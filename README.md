@@ -1,16 +1,16 @@
 # Block
 
-inuitcss’ Block object simply stacks an image on top of some text content.
+aleutcss’ Block object simply stacks an image on top of some text content.
 
 This incredibly frequently occurring design pattern is now wrapped up in a
 simple, reusable, configurable abstraction.
 
 ## Dependencies
 
-inuitcss’ Block object depends on two other inuitcss modules:
+aleutcss’ Block object depends on two other aleutcss modules:
 
-* [settings.defaults](https://github.com/inuitcss/settings.defaults)
-* [tools.functions](https://github.com/inuitcss/tools.functions)
+* [settings.defaults](https://github.com/aleutcss/settings.defaults)
+* [tools.functions](https://github.com/aleutcss/tools.functions)
 
 If you install the Block object using Bower, you will get these dependencies at
 the same time. If not using Bower, please be sure to install and `@import` these
@@ -35,7 +35,7 @@ Once installed, `@import` into your project in its Objects layer:
 
 ### Install as a Git Submodule
 
-    $ git submodule add git@github.com:inuitcss/objects.block.git
+    $ git submodule add git@github.com:aleutcss/objects.block.git
 
 Once installed, `@import` into your project in its Objects layer:
 
