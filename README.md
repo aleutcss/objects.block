@@ -12,22 +12,20 @@ aleutcss’ Block object depends on two other aleutcss modules:
 * [settings.defaults](https://github.com/aleutcss/settings.defaults)
 * [tools.functions](https://github.com/aleutcss/tools.functions)
 
-If you install the Block object using Bower, you will get these dependencies at
-the same time. If not using Bower, please be sure to install and `@import` these
+If you install the Block object using NPM, you will get these dependencies at
+the same time. If not using NPM, please be sure to install and `@import` these
 dependencies in the relevant way.
 
 ## Installation
 
-The recommended installation method is Bower, but you can install the Block
+The recommended installation method is NPM, but you can install the Block
 module via a Git Submodule, or copy and paste.
 
-### Install using Bower:
-
-    $ bower install --save inuit-block
+### 
 
 Install using npm:
 
-    $ npm install --save inuit-block
+    $ npm install --save-dev aleut-block
 
 Once installed, `@import` into your project in its Objects layer:
 
