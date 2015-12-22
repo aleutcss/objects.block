@@ -29,7 +29,7 @@ Install using npm:
 
 Once installed, `@import` into your project in its Objects layer:
 
-    @import "bower_components/inuit-block/objects.block";
+    @import "node_modules/inuit-block/objects.block";
 
 ### Install as a Git Submodule
 
