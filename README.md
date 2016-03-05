@@ -6,6 +6,7 @@ This incredibly frequently occurring design pattern is now wrapped up in a
 simple, reusable, configurable abstraction.
 
 ## Install using npm:
+
 ```ssh
     $ npm install --save-dev aleut-block
 ```
@@ -13,6 +14,7 @@ simple, reusable, configurable abstraction.
 ## Usage
 
 Basic usage of the Block object uses the required classes:
+
 ```html
 <div class="o-block">
     <img src="/path/to/image.png" alt="" class="o-block__img" />
