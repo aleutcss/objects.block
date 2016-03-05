@@ -7,8 +7,8 @@ simple, reusable, configurable abstraction.
 
 ## Install using npm:
 
-    $ npm install --save-dev aleut-shared
-
+    $ npm install --save-dev aleut-block
+	
 
 ## Usage
 
