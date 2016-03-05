@@ -1,60 +1,26 @@
 # Block
 
-aleutcss’ Block object simply stacks an image on top of some text content.
+The Block object simply stacks an image on top of some text content.
 
 This incredibly frequently occurring design pattern is now wrapped up in a
 simple, reusable, configurable abstraction.
 
-## Dependencies
+## Install using npm:
 
-aleutcss’ Block object depends on two other aleutcss modules:
+    $ npm install --save-dev aleut-shared
 
-* [settings.defaults](https://github.com/aleutcss/settings.defaults)
-* [tools.functions](https://github.com/aleutcss/tools.functions)
-
-If you install the Block object using NPM, you will get these dependencies at
-the same time. If not using NPM, please be sure to install and `@import` these
-dependencies in the relevant way.
-
-## Installation
-
-The recommended installation method is NPM, but you can install the Block
-module via a Git Submodule, or copy and paste.
-
-### 
-
-Install using npm:
-
-    $ npm install --save-dev aleut-block
-
-Once installed, `@import` into your project in its Objects layer:
-
-    @import "node_modules/inuit-block/objects.block";
-
-### Install as a Git Submodule
-
-    $ git submodule add git@github.com:aleutcss/objects.block.git
-
-Once installed, `@import` into your project in its Objects layer:
-
-    @import "objects.block/objects.block";
-
-### Install via file download
-
-The least recommended option for installation is to simply download
-`_objects.block.scss` into your project and `@import` it into your project in
-its Objects layer.
 
 ## Usage
 
 Basic usage of the Block object uses the required classes:
-
+```html
     <div class="o-block">
         <img src="/path/to/image.png" alt="" class="o-block__img" />
         <div class="o-block__body">
             <p>Text-like content goes here.</p>
         </div>
     </div>
+```
 
 The only valid children of the `.o-block` node are `.o-block__img` and
 `.o-block__body`.
@@ -70,9 +36,36 @@ Other, optional classes can supplement the required base classes:
 
 For example:
 
+```html
     <div class="o-block  o-block--small  o-block--center">
         <img src="/path/to/image.png" alt="" class="o-block__img" />
         <div class="o-block__body">
             <p>Text-like content goes here.</p>
         </div>
     </div>
+```
+
+### Enable options
+To enable the optional classes set the variables to `true` before you import
+the `_objects.block.scss`-file.
+
+```scss
+$o-block--flush:     false;
+$o-block--tiny:      false;
+$o-block--small:     false;
+$o-block--large:     false;
+$o-block--huge:      false;
+$o-block--center:    false;
+$o-block--right:     false;
+```
+
+## Dependencies
+
+The Block object depends on two other aleutcss modules:
+
+* [settings.defaults](https://github.com/aleutcss/settings.defaults)
+* [tools.functions](https://github.com/aleutcss/tools.functions)
+
+If you install the Block object using NPM, you will get these dependencies at
+the same time. If not using NPM, please be sure to install and `@import` these
+dependencies in the relevant way.
