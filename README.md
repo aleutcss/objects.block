@@ -6,20 +6,20 @@ This incredibly frequently occurring design pattern is now wrapped up in a
 simple, reusable, configurable abstraction.
 
 ## Install using npm:
-
+```ssh
     $ npm install --save-dev aleut-block
-	
+```
 
 ## Usage
 
 Basic usage of the Block object uses the required classes:
 ```html
-    <div class="o-block">
-        <img src="/path/to/image.png" alt="" class="o-block__img" />
-        <div class="o-block__body">
-            <p>Text-like content goes here.</p>
-        </div>
+<div class="o-block">
+    <img src="/path/to/image.png" alt="" class="o-block__img" />
+    <div class="o-block__body">
+        <p>Text-like content goes here.</p>
     </div>
+</div>
 ```
 
 The only valid children of the `.o-block` node are `.o-block__img` and
@@ -37,12 +37,12 @@ Other, optional classes can supplement the required base classes:
 For example:
 
 ```html
-    <div class="o-block  o-block--small  o-block--center">
-        <img src="/path/to/image.png" alt="" class="o-block__img" />
-        <div class="o-block__body">
-            <p>Text-like content goes here.</p>
-        </div>
+<div class="o-block  o-block--small  o-block--center">
+    <img src="/path/to/image.png" alt="" class="o-block__img" />
+    <div class="o-block__body">
+        <p>Text-like content goes here.</p>
     </div>
+</div>
 ```
 
 ### Enable options
