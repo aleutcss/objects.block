@@ -8,7 +8,8 @@ simple, reusable, configurable abstraction.
 ## Install using npm:
 
 ```ssh
-    $ npm install --save-dev @aleut/objects.block
+    $ npm install --save-dev aleut.objects.block
+
 ```
 
 ## Usage

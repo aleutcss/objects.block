@@ -1,5 +1,6 @@
 {
-  "name": "@aleut/objects.block",
+  "name": "aleut.objects.block"
+,
   "version": "1.0.0",
   "description": "A simple stacked image-with-text in the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_objects.block.scss",
@@ -25,7 +26,8 @@
     "css"
   ],
   "dependencies": {
-    "@aleut/settings.defaults": "~1.0.0",
-    "@aleut/settings.mixins": "~1.0.0"
+    "aleut.settings.defaults": "~1.0.0",
+    "aleut.settings.mixins": "~1.0.0"
+
   }
 }
